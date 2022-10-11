@@ -1,0 +1,59 @@
+<!DOCTYPE html>  <!--告訴瀏覽器 這是 HTML 開頭都要加上-->
+<html>  <!--開始標籤 網頁最外層 -->
+    <head>  <!--表示裡面網頁的資訊 -->
+        <meta charset="UTF-8" ></meta> <!--跟瀏覽器說 使用 UTF-8 的編碼方式 來顯示於中文 , 瀏覽器才看得懂中文-->
+        <title>豪豪的網頁</title>  <!--網頁的標題 左上角 -->
+    </head>
+    <body>
+        <h2>第一篇文章</h2> <!--h 標籤代表 標題 有h1~h6 h1通常只會有一個 代表最大 最重要的標題-->
+        <p>今天天氣很好 <b>好開心</b></p> <!-- P 標籤代表一般的文字標籤-->
+        <p><b>用b標籤代表粗體</b></p>
+        <p><i>用i標籤代表斜體</i></p>
+        <p><i><b>用i+b既粗體且斜體</b></i></p>
+        <br/>
+        <br/> <!--用 br 標籤-->
+        <hr/>
+        <h2>第二篇文章</h2> 
+        <p>今天天氣不好 嗚嗚</p>
+
+
+        <!-- 連結 & 圖片-->
+        <a href="https://google.com"><b>Google網址</b></a> <!-- a標籤代表超連結 而href 代表 a 標籤的數性 -->
+        <a href="page2.html">第二頁網站</a>
+        <a href="dir/page3.html">第三頁網站</a> <!--dir/ 代表Folder這資料夾路徑下才找的到page3 這個html-->
+        <a href="pikachu.png">皮卡丘</a> <!--a標籤也可以連結到 圖片檔案 不僅僅只有超連結-->
+
+        <img src="https://tw.portal-pokemon.com/play/resources/pokedex/img/pm/5794f0251b1180998d72d1f8568239620ff5279c.png" width="300" height="300"/> <!--連結外部的圖片位置-->
+        <img src="pikachu.png" width="400" height="300" /> <!--顯示內部檔案的圖片 width代表寬度 , height代表高度-->
+
+        <!--影片 & 遷入youtube影片-->
+        <video src="六度空間.mp4" controls width="400">影片無法順利播放</video> <!--透過 video標籤來使用影片標籤 scr屬性代表來源 controls屬性代表影片控制面板 width代表寬度-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2lvh7Xm4BVc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <!--列表 & 表格-->
+        <ol type="I">  <!--ul代表列表 ol標籤變成用數字排序 在ol標籤添加 type屬性 A 用A排列 , a 小寫a排列 , i 用小寫羅馬數字排列, I 用大寫羅馬數字排列-->
+            <li>Google</li> <!--列表裡的內容用 li 標籤顯示-->
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Dcard</li>
+        </ol>
+
+        <table width="400"> <!--table標籤代表表格-->
+            <tr> <!--tr標籤代表一行-->
+                <td>日期</td> <!-- td標籤代表內容-->
+                <td>數學</td>
+                <td>英文</td>
+            </tr>
+            <tr>
+                <td>10/11</td>
+                <td>90</td>
+                <td>80</td>
+            </tr>
+            <tr>
+                <td>10/12</td>
+                <td>50</td>
+                <td>30</td>
+            </tr>
+        </table>
+    </body>
+</html> <!--結束標籤-->
