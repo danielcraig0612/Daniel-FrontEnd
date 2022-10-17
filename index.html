@@ -1,10 +1,10 @@
 <!DOCTYPE html>  <!--告訴瀏覽器 這是 HTML 開頭都要加上-->
-<html>  <!--開始標籤 網頁最外層 -->
+<input>  <!--開始標籤 網頁最外層 -->
     <head>  <!--表示裡面網頁的資訊 -->
         <meta charset="UTF-8" ></meta> <!--跟瀏覽器說 使用 UTF-8 的編碼方式 來顯示於中文 , 瀏覽器才看得懂中文-->
         <title>豪豪的網頁</title>  <!--網頁的標題 左上角 -->
     </head>
-    <body>
+    <br>
         <h2>第一篇文章</h2> <!--h 標籤代表 標題 有h1~h6 h1通常只會有一個 代表最大 最重要的標題-->
         <p>今天天氣很好 <b>好開心</b></p> <!-- P 標籤代表一般的文字標籤-->
         <p><b>用b標籤代表粗體</b></p>
@@ -55,5 +55,82 @@
                 <td>30</td>
             </tr>
         </table>
+
+        <!-- html 的容器 div & span -->
+        <div style="color:red"> <!-- div 容器 可以利於 CSS 樣式使用 網頁的美化與排版會方便許多-->
+            <ol type="I">  <!--ul代表列表 ol標籤變成用數字排序 在ol標籤添加 type屬性 A 用A排列 , a 小寫a排列 , i 用小寫羅馬數字排列, I 用大寫羅馬數字排列-->
+                <li>Google</li> <!--列表裡的內容用 li 標籤顯示-->
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Dcard</li>
+            </ol>
+
+            <table width="400"> <!--table標籤代表表格-->
+                <tr> <!--tr標籤代表一行-->
+                    <td>日期</td> <!-- td標籤代表內容-->
+                    <td>數學</td>
+                    <td>英文</td>
+                </tr>
+                <tr>
+                    <td>10/11</td>
+                    <td>90</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>10/12</td>
+                    <td>50</td>
+                    <td>30</td>
+                </tr>
+            </table>
+        </div>
+
+        <a>123</a> <!-- a是平胸所以不佔空間 所以會擠在一起  ref:Daniel-->
+        <a>456</a>
+        <hr/>
+        <p>你好可愛</p>  <!--P是大屁股會佔用一整行 ref:Jasmine貓咪-->
+        <p style="color:coral">你好漂亮</p>
+
+        <span>123</span> <!-- span 容器 代表有多少字數就佔用多少版面 並不會換行-->
+        <span>456</span>
+        <div>你好可愛</div> <!-- div 容器 一次佔用一行 並且會換行-->
+        <div>你好漂亮</div>
+        <br/>
+        <br/>
+
+
+        <a style="color:pink">帳號 : </a>
+        <input type="text" placeholder="請輸入帳號">
+        <br/>
+        <a style="color:goldenrod">密碼 : </a>
+        <input type="password" placeholder="請輸入帳號">
+
+        <button style="color: purple;">送出</button>
+
+
+        <div style="color:blue;">帳號 :
+            <input type="text" placeholder="請輸入帳號">
+        </div>
+        <div style="color:red;">密碼 :
+            <input type="password" placeholder="請輸入密碼">
+        </div>  
+        
+        <textarea>哈哈</textarea>
+
+        <div style="color:red">
+        <input type="checkbox"/ > <a >Jasmine是大胖胖？</a>
+        <br/>
+        <input type="checkbox"/ > <a >Daniel是大帥哥？</a>
+        </div>
+
+        <input type="range"/>
+        <input type="date"/>
+        <input type="color"/>
+        <input type="radio"/>
+        <input type="file"/>
+        </br>
+        <input type="url"/>
+        <input type="search"/>
+        <input type="datetime-local"/>
+        
     </body>
 </html> <!--結束標籤-->
