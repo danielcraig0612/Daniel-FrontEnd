@@ -1,11 +1,51 @@
 <!DOCTYPE html>
     <head>  
         <meta charset="UF-8"><meta/>
-        <title>第二頁網站</title>
+        <title>CSS 課程</title>
     </head>
-    <body>
-        <h1>我是第二頁網站</h1>
-        <p>第二頁網站的內容</p>
+    <br>
+        <!--color-->
+        <h1 style="color: Red; font-size: 30px;">CSS page</h1>
+        <p style="color: blue; border: 10px solid green;">這是實線框架</p>
+        <p style="color: blue; border: 10px dashed pink;">這是虛線框架</p>
+        <p style="color: blue; border: 10px dashed pink; max-width: 800px;">這是設定寬度虛線框架 width 代表寬 水平 左至右代表 臉很寬</p>
+        <p style="color: blue; border: 10px dashed pink; max-height: 1px;">這是設定長度虛線框架 height 代表長 垂直 上到下代表 臉很長</p>
+        <a style="background-color: rgb(232, 232, 163);">我是 a 標籤 平胸標籤會黏在一起 不會換行 不會佔用一整格</a>
+
+        <!-- Padding & Margin 都是用來控制空間的, Padding用來控制內部空間 , Margin 用來控制外部空間-->
+    
+        <h1>CSS 教學</h1>
+        <div style="padding:20px; margin:20px; background-color:aquamarine; border:1px solid black">
+            大家好我是大豪豪,今天天氣很好
+        </div>
+
+        <!--Padding 與 Margin 可以只指定上方的內部空間 e.g top / bottom / left / right 也可以直接定義不同的方向的值 順序為(順時針 上右下左)-->
+        <!--Margin 可以寫 負值   e.g. margin-top:-30px , 但 Padding 不能-->
+        <div style="padding:20px 30px 40px 50px; margin:20px 40px 10px 30px; background-color:cornflowerblue; border:1px solid black">
+            大家好我是大豪豪,今天天氣不好
+        </div>
+
+
+        <!--Float & Display 跟排版有關 ,Float 是浮起來的意思 可使用 right or left(以3D視角來看) ; Display 是顯示的意思-->
+        <!--<img src="pikachu.png" width="200px" style="float:right;"/>-->
+
+        <ul style="float:left; background-color:aqua; margin:0px; padding:15px;">
+            <li>主頁</li>
+            <li>部落格</li>
+            <li>相簿</li>
+            <li>聯絡我們</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        <br/>
+        <!--P標籤 html標籤有 預設的兩種顯示 block & inline -->
+
+        <p style="display:inline">妳好 原本是 P 標籤 預設是 Block 會換行 但我故意改成 inline (字數多少佔用多少空間)</p> 
+        <p style="display:inline">哈哈</p>
+        <span style="display:block">原本是 Span 標籤 預設是 inline的屬性 (會依據字數佔用多少空間)故意改成 Block 顯示方式 代表會換行 佔用一整個空間</span>
+        <span>span2</span>
+        </br>
         <a href="index.html">回到首頁</a>
+
     </body>
 </html>
